@@ -34,6 +34,22 @@ def getKeyboardInput():
     elif kp.getKey("d"):
         yv = speed
 
+    if kp.getKey("z"):
+        me.flip("f")
+        sleep(.1)
+
+    if kp.getKey("h"):
+        me.flip("b")
+        sleep(.1)
+
+    if kp.getKey("g"):
+        me.flip("l")
+        sleep(.1)
+
+    if kp.getKey("j"):
+        me.flip("r")
+        sleep(.1)
+
     if kp.getKey("q"): me.land(); time.sleep(3)
     if kp.getKey("e"): me.takeoff()
 
