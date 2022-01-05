@@ -12,7 +12,7 @@ me.streamon()
 
 def getKeyboardInput():
     lr, fb, ud, yv = 0, 0, 0, 0
-    speed = 50
+    speed = 100
 
     if kp.getKey("LEFT"):
         lr = -speed
@@ -36,19 +36,19 @@ def getKeyboardInput():
 
     if kp.getKey("z"):
         me.flip("f")
-        sleep(.1)
+        time.sleep(.1)
 
     if kp.getKey("h"):
         me.flip("b")
-        sleep(.1)
+        time.sleep(.1)
 
     if kp.getKey("g"):
         me.flip("l")
-        sleep(.1)
+        time.sleep(.1)
 
     if kp.getKey("j"):
         me.flip("r")
-        sleep(.1)
+        time.sleep(.1)
 
     if kp.getKey("q"): me.land(); time.sleep(3)
     if kp.getKey("e"): me.takeoff()
