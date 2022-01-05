@@ -51,8 +51,6 @@ def trackujOblicej(info, w, pid, pError):
     #Tady urcuju co má v jaké vzdálenosti dělat
     if area > fbRange[0] and area < fbRange[1]:
         fb = 100
-    #elif area > fbRange[1]: 
-    #    fb=-20
     elif area < fbRange[0] and area != 0: #Tady letí k člověku
         fb=100
     if x == 0:
@@ -62,7 +60,6 @@ def trackujOblicej(info, w, pid, pError):
     me.send_rc_control(0, fb, 0, speed)
     return error
 
-#cap = cv2.VideoCapture(0)
 while True:
     #_, img = cap.read()
     img = me.get_frame_read().frame
